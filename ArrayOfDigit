@@ -17,8 +17,8 @@ namespace ArrayOfDigit
         {
             List<byte> newList = new List<byte>();
             int length = a.Count;
-
             byte add = 0;  // Остатък от събирането 
+            
             for (int i = 0; i < length; i++)
             {
                 if ((byte)(a[i] + b[i] + add) < 10)
