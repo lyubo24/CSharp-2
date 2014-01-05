@@ -18,9 +18,7 @@ namespace ArrayOfDigit
 
             FixTheEmptyPosition(firstNumber, secondNumber);
             SumDigit(firstNumber, secondNumber);
-
         }
-
         static void SumDigit(List<byte> a, List<byte> b)
         {
             List<byte> newList = new List<byte>();
@@ -48,7 +46,7 @@ namespace ArrayOfDigit
                 newList.Add(1);
             }
 
-            newList.Reverse();  // Обръщам масиваза да изведа верният резултат -> 5, 4, 3, 2, 1   ->  1, 2, 3, 4, 5
+            newList.Reverse();  // Обръщам масива за да изведа верният резултат -> 5, 4, 3, 2, 1   ->  1, 2, 3, 4, 5
             Console.WriteLine(string.Join("", newList));
         }
         //Проверявам дължината на масивите и допълвам по-късият масив с нули за да станат еднакви
