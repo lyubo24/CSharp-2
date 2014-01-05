@@ -57,15 +57,18 @@ namespace ArrayOfDigit
             a.Reverse();  //Обръщам масивите за да мога да ги събера по-лесно в последствие -> 1, 2, 3 -> 3, 2, 1
             b.Reverse();  //Обръщам масивите за да мога да ги събера по-лесно в последствие -> 1, 2, 3, 4, 5, 6 -> 6, 5, 4, 3, 2, 1
 
-            for (int i = lengthMin; i < lengthMax; i++)
+            if (lengthMax != lengthMin)  // Ако масивите са с различна дължина ги изравняваме
             {
-                if (a.Count < b.Count)
+                for (int i = lengthMin; i < lengthMax; i++)
                 {
-                    a.Add(0);   // 0, 0, 0, 3, 2, 1
-                }
-                else
-                {
-                    b.Add(0);
+                    if (a.Count < b.Count)
+                    {
+                        a.Add(0);   // 0, 0, 0, 3, 2, 1
+                    }
+                    else
+                    {
+                        b.Add(0);
+                    }
                 }
             }
         }
